@@ -52,9 +52,9 @@ jobs:
   image:
     needs: test
     runs-on: ubuntu-latest
-    # Учебный инцидент. У задания ещё нет права packages: write.
     permissions:
       contents: read
+      packages: write
     steps:
       - name: Checkout
         uses: actions/checkout@v7
