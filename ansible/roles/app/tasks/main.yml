@@ -19,7 +19,7 @@
     state: started
     restart_policy: unless-stopped
     published_ports:
-      - "127.0.0.1:{{ app_host_port }}:{{ app_internal_port }}"
+      - "127.0.0.1:{{ app_host_port }}:5999"
 
 - name: Wait for application health
   ansible.builtin.uri:
